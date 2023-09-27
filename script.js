@@ -12,11 +12,15 @@ const foodBtn = document.querySelector(".foodButton");
 const waterBtn = document.querySelector(".waterButton");
 const healthBtn = document.querySelector(".healthButton");
 
+
+let petAlert = document.querySelector(".alert");
+
+
 /* Stats */
 
-let food = " ";
-let water = " ";
-let health = " ";
+let food = 100;
+let water = 100;
+let health = 100;
 
 /* Actions suite à appui d'un bouton */
 
@@ -50,23 +54,22 @@ if (gameStart = "true"){
 setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
-        window.alert("I've ate too much.");
+        document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
         console.log("Food limit bypassed: retored to 100");
         food = 100;
         health --;
     }
 
     if (water > 100){
-        window.alert("I've drank too much.");
+        document.getElementsByClassName("alert")[0].innerHTML = "I've drank too much.";
         console.log("Water limit bypassed: retored to 100");
         water = 100;
         health --;
     }
 
     if (health > 100){
-        window.alert("I've drank too much.");
+        document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
         console.log("Water limit bypassed: retored to 100");
-        water = 100;
         health --;
     }
 }
