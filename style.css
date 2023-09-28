@@ -1,5 +1,51 @@
+/* @font-face {
+    font-family: ;'Irish Grover';
+    src: url();
+} */
+
+:root {
+    --blueColor : #5AA9E6;
+    --pinkColor : #FA85A6;
+    --whiteColor : #F5F5F5;
+    --redColor : #D05353;
+    --primaryFontfamily:  'Irish Grover', sans-serif;
+
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--blueColor);
+
+}
+.nav-buttons {
+    margin-left: 6em;
+    margin-right: 6em;
+    text-decoration: none;
+
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    justify-content: space-around;
+    background-color: var(--pinkColor);
+}
+
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--primaryFontfamily);
 }
+
+
