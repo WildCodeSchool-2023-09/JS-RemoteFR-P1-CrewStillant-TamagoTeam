@@ -5,7 +5,7 @@ let gameStart = "false";
 let petName = "Dragoti";
 
 /*Quand le form pour le nom sera rempli */
-gameStart = "True"
+gameStart = "True";
 
 /* Liaisons HTML/JS */
 const foodBtn = document.querySelector(".foodButton");
@@ -18,9 +18,15 @@ let petAlert = document.querySelector(".alert");
 
 /* Stats */
 
-let food = 100;
-let water = 100;
-let health = 100;
+let food = " ";
+let water = " ";
+let health = " ";
+
+if (gameStart = true){
+    food = 100;
+    water = 100;
+    health = 100;
+    }
 
 /* Actions suite à appui d'un bouton */
 
@@ -40,7 +46,7 @@ healthBtn.addEventListener("click", function(){
 });
 
 
-/* Chrono décrémentation toute les deux secondes*/
+/* Chrono décrémentation des stats toute les deux secondes*/
 if (gameStart = "true"){
     setInterval(decrease, 2000)
         function decrease(){
@@ -54,23 +60,37 @@ if (gameStart = "true"){
 setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
-        document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
-        console.log("Food limit bypassed: restored to 100");
         food = 100;
-        health --;
+        health --; // Malus de sur-alimentation //
+        console.log("Food limit bypassed: restored to 100");
+        document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
     }
 
     if (water > 100){
-        document.getElementsByClassName("alert")[0].innerHTML = "I've drank too much.";
-        console.log("Water limit bypassed: restored to 100");
         water = 100;
         health --;
+        console.log("Water limit bypassed: restored to 100");
+        document.getElementsByClassName("alert")[0].innerHTML = "I've drank too much.";
     }
 
     if (health > 100){
-        document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
-        console.log("Water limit bypassed: restored to 100");
         health = 100;
         health --;
+        console.log("Water limit bypassed: restored to 100");
+        document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
+    }
+}
+
+/* Detection Game Over */
+
+setInterval(gameOver, 500)
+function gameOver(){
+
+    if (health <= 0){
+    //Faire disparaitre le dragon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    gameStart = "False";
+    document.getElementsByClassName("alert")[0].innerHTML = "Game Over.";
+    window.alert("Game Over");
+    health = 100;
     }
 }
