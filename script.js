@@ -70,6 +70,7 @@ function inspection(){
     if (health > 100){
         document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
         console.log("Water limit bypassed: restored to 100");
+        health = 100;
         health --;
     }
 }
