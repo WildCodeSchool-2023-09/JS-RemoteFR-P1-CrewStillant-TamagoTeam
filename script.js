@@ -55,21 +55,21 @@ setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
         document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
-        console.log("Food limit bypassed: retored to 100");
+        console.log("Food limit bypassed: restored to 100");
         food = 100;
         health --;
     }
 
     if (water > 100){
         document.getElementsByClassName("alert")[0].innerHTML = "I've drank too much.";
-        console.log("Water limit bypassed: retored to 100");
+        console.log("Water limit bypassed: restored to 100");
         water = 100;
         health --;
     }
 
     if (health > 100){
         document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
-        console.log("Water limit bypassed: retored to 100");
+        console.log("Water limit bypassed: restored to 100");
         health --;
     }
 }
