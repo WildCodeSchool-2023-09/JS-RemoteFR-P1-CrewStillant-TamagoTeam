@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); */
 
 :root {
     --primaryBlue : #5AA9E6;
@@ -8,25 +9,39 @@
     --pinkColor : #FA85A6;
     --whiteColor : #F5F5F5;
     --redColor : #D05353;
-    --primaryFontfamily:  'Irish Grover', sans-serif;
     --myBorder : solid black;
     --myBorderWidth : 1.5px;
     --myBorderRadius : 7px;
+    --primaryFont : "Irish Grover",
+
     /* font a intégrer au code */
 }
 
 body{
     background-color: var(--primaryBlue);
-    margin: 0.3 0 0 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
 }
 .logo{
     align-items: flex-start;
+    background-color: var(--pinkColor);
+    background-image: url(logo_tamagotchi\ 1.png);
+    background-size: cover;
+    padding: 2.8rem;
+    border: var(--myBorder);
+    border-radius: 100%;
+    border-width: 2px;
+    z-index: 2;
+    /* position: fixed; */
+
 }
 
 
@@ -40,6 +55,14 @@ nav{
     border:solid black;
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
+    z-index: 1;
+    font-family: var(--primaryFont), sans-serif ;
+    /* position: fixed; */
+
+}
+.button-section {
+    padding-left: 0rem;
+
 }
 
 
@@ -52,8 +75,10 @@ nav{
     border: var(--myBorder);
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
+    margin: 0 0 0 0;
     padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
+    z-index: 1;
 
 }
 li a {
