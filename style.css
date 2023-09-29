@@ -111,6 +111,19 @@ main {
     padding-left: 30%;
 }
 
+#dName {
+    background-color: var(--pinkColor);
+    border: none;
+    padding: 100;
+}
+
+.threeButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
 
 
 #instruction {
@@ -144,6 +157,7 @@ main {
 }
 
 .reviews {
+
     margin: 0 0 0 0;
     background-color: var(--whiteColor);
     padding: 2rem 2rem 2rem 2rem;
