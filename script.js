@@ -1,8 +1,7 @@
-/*Position par défaut*/
+/* Position par défaut */
 let gameStart = "false";
-
-/* !!!Prendre un form en compte pour cette variable.!!! */
 let petName = "Dragoti";
+
 /* Stats */
 
 let food;
