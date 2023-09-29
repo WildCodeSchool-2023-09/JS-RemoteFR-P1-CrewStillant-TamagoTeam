@@ -1,32 +1,32 @@
-/*Position par défaut*/
+/* Position par défaut */
 let gameStart = "false";
-
-/* !!!Prendre un form en compte pour cette variable.!!! */
 let petName = "Dragoti";
 
-/*Quand le form pour le nom sera rempli */
-gameStart = "True";
+/* Stats */
 
-/* Liaisons HTML/JS */
+let food;
+let water;
+let health;
+
+/* Quand le nom du dragon est validé */
+const playBtn = document.querySelector(".playButton");
+
+playBtn.addEventListener("click", function(){
+    gameStart = "true";
+    if (gameStart === "true"){
+        food = 100;
+        water = 100;
+        health = 100;
+        }
+});
+
+/* Liaisons entre HTML et JS */
+
 const foodBtn = document.querySelector(".foodButton");
 const waterBtn = document.querySelector(".waterButton");
 const healthBtn = document.querySelector(".healthButton");
 
-
 let petAlert = document.querySelector(".alert");
-
-
-/* Stats */
-
-let food = " ";
-let water = " ";
-let health = " ";
-
-if (gameStart = true){
-    food = 100;
-    water = 100;
-    health = 100;
-    }
 
 /* Actions suite à appui d'un bouton */
 
@@ -47,14 +47,16 @@ healthBtn.addEventListener("click", function(){
 
 
 /* Chrono décrémentation des stats toute les deux secondes*/
-if (gameStart = "true"){
-    setInterval(decrease, 2000)
+playBtn.addEventListener("click", function(){
+if (gameStart === "true"){
+    decrementation = setInterval(decrease, 2000)
         function decrease(){
             food-=2;
             water-=3;
             health--;
     }
 }
+})
 
 /* Limitation à 100 des barres de besoins*/
 setInterval(inspection, 500)
@@ -88,9 +90,11 @@ function gameOver(){
 
     if (health <= 0){
     //Faire disparaitre le dragon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    gameStart = "False";
+    gameStart = "false";
     document.getElementsByClassName("alert")[0].innerHTML = "Game Over.";
+    console.log("Game Over reached, shutting down game until restart.")
     window.alert("Game Over");
     health = 100;
+    clearInterval(decrementation);
     }
 }

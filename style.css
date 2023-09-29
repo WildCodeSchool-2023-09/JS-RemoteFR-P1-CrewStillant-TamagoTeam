@@ -133,6 +133,8 @@ main {
     border-width: var(--myBorderWidth);
 }
 
+/*Section Commentaire*/
+
 #review {
     background-color: var(--pinkColor);
     border: var(--myBorder);
@@ -140,14 +142,28 @@ main {
     border-width: var(--myBorderWidth);
     padding-left: 30%;
 }
- .reviews {
+
+.reviews {
     margin: 0 0 0 0;
     background-color: var(--whiteColor);
     padding: 2rem 2rem 2rem 2rem;
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
+    border: 3px var(--myBorder);
+    border-radius: 10px;
     border-width: var(--myBorderWidth);
- }
+}
+
+
+
+#commentaires {
+    width: 200px;
+    height: 100px;
+    }
+
+#send-button {
+    text-align: center;
+}
+
+ /*Section Equipe*/
 
  #team {
     background-color: var(--pinkColor);
@@ -167,6 +183,8 @@ main {
     border-width: var(--myBorderWidth);
 
  }
+
+/*Footer*/
 
  footer{
     background-color: var(--pinkColor);
