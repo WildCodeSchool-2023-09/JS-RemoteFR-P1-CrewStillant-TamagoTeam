@@ -8,28 +8,104 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logoPic">
-            <img src="C:\Users\faiza\OneDrive\Bureau\Wild_school\project1\dragon.png" alt="logo dragoti" width="500" height="500">
-        </div>
-        <div class = "petName">
-            <h1>Dragoti</h1>
-        </div>
-        <nav>
-            <ul class="nav-buttons">
-                <li><a href ="#instructions">Instructions</a></li>
-                <li><a href="#avis">Avis</a></li>
+    <header> 
+<!-- ici le header c.a.dire le nom de la bestiole -->
+        <h1 class="pet-name">Dragoti</h1>
+    </header>
+    <nav>
+<!-- la nav barre avec 2sections : le logo et les boutons -->
+        <section class ="logo">
+            <img id ="logoImg" alt="logo">
+        </section>
+
+        <section class="button-section">
+             <ul class="nav-buttons">
+                <li><a href ="#instructions">Inst.</a></li>
+                <li><a href="#avis">Comm.</a></li>
                 <li><a href = "#Equipe">Equipe</a></li>
             </ul>
-        </nav>
+        </section>
+    </nav>
+    <main>
+        <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
+<!-- section1 -->
+        <section class = "dragonGame">
 
-        
-    </header>
+            <section class="dragonPicAlert">
+                <img class="dragonStates" alt="état du dragon"> 
+            </section>
+            <h1 class="alert">Hello!</h1>
+ 
+        </section>
 
-    <h1 class="alert">Hello!</h1>
+<!-- section 2 nommer le dragon-->
 
-    <button class="foodButton">Food</button>
-    <button class="waterButton">Water</button>
-    <button class="healthButton">Health</button>
+        <section class="nameTheDragon">
+            <form action=""> 
+                <!-- faut définir l'action? -->
+                <label for="dName">Nommes ton dragon</label><br>
+                <input type="text" id=dName name="dName">
+            </form>
+        </section>
+
+<!-- section 3 les boutons -->
+
+        <section class="threeButtons">
+            <button class="foodButton">Food</button>
+            <button class="waterButton">Water</button>
+            <button class="healthButton">Health</button>
+        </section>
+
+<!-- section 4  les instruc-->
+
+        <section>
+            <h2 id="instruction">Instructions</h2>
+            <ul class ="instructions">
+                <img id = "meat" alt="meat">
+                <li>Nourris ton dragon!</li>
+                <img id = "water" alt ="water">
+                <li>Donnes-lui à boire!!</li>
+                <img id="medicine" alt="medicine">
+                <li>Prends soin de lui!!!</li>
+            </ul>
+        </section>
+<!-- section 5 les commentaires-->
+
+        <section class="reviews">
+            <h2 id="review">Commentaires</h2>
+            <form action ="">
+                <label for="pseudo">Pseudo</label><br>
+                <input type="text" id="pseudo" name="pseudo"> <br>
+                <label for="mail">Mail</label><br>
+                <input type="text" id="mail"><br>
+                <label for="commentaires">Commentaires</label><br>
+                <input type="text" id="commentaires">
+            </form>
+        </section>
+
+        <section class="theTeam">
+            <h2 id="team">Equipe</h2>
+            <ul>
+                <li>
+                    <img id="faizPic" alt="Faiza picture">
+                    <h3>Faiza</h3>
+                </li>
+                <li>
+                    <h3>Pierre</h3>
+                    <img id="pierrPic" alt="Pierre picture">
+                </li>
+                <li>
+                    <img id="gaelPic" alt ="Gael picture">
+                    <H3>Gael</H3>
+                </li>
+                <li>
+                    <h3>Thierry</h3>
+                    <img id="thierrPic" alt="Thierry picture">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>pied de page</footer>
+
 </body>
 </html>
