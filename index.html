@@ -3,19 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dragoti</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <header> 
+<!-- ici le header c.a.dire le nom de la bestiole -->
+        <h1 class="pet-name">Dragoti</h1>
+    </header>
+    <nav>
+<!-- la nav barre avec 2sections : le logo et les boutons -->
+        <section class ="logo">
+            <img id ="logoImg" alt="logo">
+        </section>
 
-    <h2 class="alert">Hello!</h2>
+        <section class="button-section">
+             <ul class="nav-buttons">
+                <li><a href ="#instructions">Inst.</a></li>
+                <li><a href="#avis">Comm.</a></li>
+                <li><a href = "#Equipe">Equipe</a></li>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
+<!-- section1 -->
+        <section class = "dragonGame">
 
-    <button class="foodButton">Food</button>
-    <button class="waterButton">Water</button>
-    <button class="healthButton">Health</button>
+            <section class="dragonPicAlert">
+                <img class="dragonStates" alt="état du dragon"> 
+            </section>
+            <h2 class="alert">Hello!</h2>
+ 
+        </section>
+
+<!-- section 2 nommer le dragon-->
+
+        <section class="nameTheDragon">
+            <form action=""> 
+                <!-- faut définir l'action? -->
+                <label for="dName">Nommes ton dragon</label><br>
+                <input type="text" id=dName name="dName">
+            </form>
+        </section>
+
+<!-- section 3 les boutons -->
+
+        <section class="threeButtons">
+            <button class="foodButton">Food</button>
+            <button class="waterButton">Water</button>
+            <button class="healthButton">Health</button>
+        </section>
+
+<!-- section 4  les instruc-->
+
+        <section>
+            <h2 id="instruction">Instructions</h2>
+            <ul class ="instructions">
+                <img id = "meat" alt="meat">
+                <li>Nourris ton dragon!</li>
+                <img id = "water" alt ="water">
+                <li>Donnes-lui à boire!!</li>
+                <img id="medicine" alt="medicine">
+                <li>Prends soin de lui!!!</li>
+            </ul>
+        </section>
+<!-- section 5 les commentaires-->
+
+
+        <section class="reviews">
+            <h2 id="review">Commentaires</h2>
+            <form action ="">
+                <label for="pseudo">Pseudo</label><br>
+                <input type="text" id="pseudo" name="pseudo"> <br>
+                <label for="mail">Mail</label><br>
+                <input type="text" id="mail"><br>
+                <label for="commentaires">Commentaires</label><br>
+                <input type="text" id="commentaires">
+            </form>
+        </section>
+ 
+        <section class="theTeam">
+            <h2 id="team">Equipe</h2>
+            <ul>
+                <li>
+                    <img id="faizPic" alt="Faiza picture">
+                    <h3>Faiza</h3>
+                </li>
+                <li>
+                    <h3>Pierre</h3>
+                    <img id="pierrPic" alt="Pierre picture">
+                </li>
+                <li>
+                    <img id="gaelPic" alt ="Gael picture">
+                    <H3>Gael</H3>
+                </li>
+                <li>
+                    <h3>Thierry</h3>
+                    <img id="thierrPic" alt="Thierry picture">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>pied de page</footer>
 
     <script src="script.js"></script>
     
 </body>
 
 </html>
+
