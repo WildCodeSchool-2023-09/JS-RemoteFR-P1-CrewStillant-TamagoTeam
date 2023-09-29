@@ -1,5 +1,150 @@
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+*{
+    box-sizing: border-box;
 }
+
+:root {
+    --primaryBlue : #5AA9E6;
+    --secondaryBlue: #7FC8F8;
+    --pinkColor : #FA85A6;
+    --whiteColor : #F5F5F5;
+    --redColor : #D05353;
+    --primaryFontfamily:  'Irish Grover', sans-serif;
+    --myBorder : solid black;
+    --myBorderWidth : 1.5px;
+    --myBorderRadius : 7px;
+    /* font a intégrer au code */
+}
+
+body{
+    background-color: var(--primaryBlue);
+    margin: 0.3 0 0 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    align-items: flex-start;
+}
+
+
+.pet-name{
+    display: flex;
+    justify-content: center ;
+    padding-left: 5rem;
+    font-size: 3rem;
+    background-color: var(--secondaryBlue);
+    margin: 0 0 0 0 ;
+    border:solid black;
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+}
+
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    background-color: var(--whiteColor);
+    border: var(--myBorder);
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+    margin-left: 2rem;
+
+}
+li a {
+    text-decoration: none;
+    background-color: var(--pinkColor);
+    color: black;
+    padding: 0.3rem;
+    border-radius: var(--myBorderRadius);
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+
+
+}
+
+.dragonGame {
+    background-color: var(--secondaryBlue);
+}
+
+.nameTheDragon {
+    background-color: var(--pinkColor);
+    border: var(--myBorder);
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    padding-left: 30%;
+}
+
+#instruction {
+
+    background-color: var(--pinkColor);
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+    padding-left: 30%;
+}
+.instructions {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    list-style-type: none;
+    background-color: var(--whiteColor);
+    padding: 2rem 2rem 2rem 2rem;
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+}
+
+#review {
+    background-color: var(--pinkColor);
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+    padding-left: 30%;
+}
+ .reviews {
+    margin: 0 0 0 0;
+    background-color: var(--whiteColor);
+    padding: 2rem 2rem 2rem 2rem;
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+ }
+
+ #team {
+    background-color: var(--pinkColor);
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+    padding-left: 30%;
+
+ }
+
+ .theTeam {
+    margin: 0 0 0 0;
+    background-color: var(--whiteColor);
+    padding: 2rem 2rem 2rem 2rem;
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+
+ }
+
+ footer{
+    background-color: var(--pinkColor);
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    border-width: var(--myBorderWidth);
+
+ }
