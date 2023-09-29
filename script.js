@@ -49,7 +49,7 @@ healthBtn.addEventListener("click", function(){
 /* Chrono décrémentation des stats toute les deux secondes*/
 playBtn.addEventListener("click", function(){
 if (gameStart === "true"){
-    setInterval(decrease, 2000)
+    decrementation = setInterval(decrease, 2000)
         function decrease(){
             food-=2;
             water-=3;
@@ -95,5 +95,6 @@ function gameOver(){
     console.log("Game Over reached, shutting down game until restart.")
     window.alert("Game Over");
     health = 100;
+    clearInterval(decrementation);
     }
 }
