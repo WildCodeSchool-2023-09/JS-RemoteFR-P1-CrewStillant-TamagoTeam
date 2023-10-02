@@ -1,19 +1,61 @@
 /* Position par défaut */
 let gameStart = "false";
-let petName = "Dragoti";
+let petName = document.querySelector("#pet-name");
 
 /* Stats */
 
-let food;
+let food
 let water;
 let health;
 
-/* Quand le nom du dragon est validé */
-const playBtn = document.querySelector(".playButton");
+                    /*Mouvement Zone "Nommes ton dragon"*/
 
-playBtn.addEventListener("click", function(){
+/*apparition de la zone pour donner le nom du dragon*/
+
+const initiateGame = document.querySelector(".defaultBox");
+const displaySecondBox =document.querySelector(".secondBox");
+initiateGame.addEventListener("click", () => displaySecondBox.style.display = "contents");
+
+/*puis message validation lancement jeu*/
+
+
+
+/*le nom saisi remplace le nom par default*/
+
+const playBtn = document.querySelector(".playButton");
+const newName = document.querySelector("#dName");
+newName.addEventListener("change", function () {
+    petName.textContent = this.value
+});
+
+/*Le message de validation du nom remplace le reste puis les 3 boutons s'affichent*/
+
+const confirmName = document.querySelector(".secondBox");
+const displayThirdBox = document.querySelector(".thirdBox");
+const displayDragonGame = document.querySelector(".dragon-game")
+const threeButton = document.querySelector(".three-buttons");
+
+function displayButtons() {
+    displayDragonGame.style.display = "none";
+    threeButton.style.display = "contents";
+}
+
+playBtn.addEventListener("click", () => {
+    initiateGame.style.display = "none";
+    displaySecondBox.style.display = "none";
+    displayThirdBox.style.display = "contents";
+    setTimeout(displayButtons, 3000);
+    });
+
+
+
+
+
+
+/* Quand le nom du dragon est validé */
+playBtn.addEventListener("click", function() {
     gameStart = "true";
-    if (gameStart === "true"){
+    if (gameStart === "true") {
         food = 100;
         water = 100;
         health = 100;
@@ -22,9 +64,9 @@ playBtn.addEventListener("click", function(){
 
 /* Liaisons entre HTML et JS */
 
-const foodBtn = document.querySelector(".foodButton");
-const waterBtn = document.querySelector(".waterButton");
-const healthBtn = document.querySelector(".healthButton");
+const foodBtn = document.querySelector("#food-Button");
+const waterBtn = document.querySelector("#water-Button");
+const healthBtn = document.querySelector("#health-Button");
 
 let petAlert = document.querySelector(".alert");
 
