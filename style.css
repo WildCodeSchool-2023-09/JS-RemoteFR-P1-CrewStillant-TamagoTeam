@@ -319,5 +319,6 @@ main {
     border-radius: var(--myBorderRadius);
     border-width: var(--myBorderWidth);
     text-align: center;
+    margin-top: 1rem;
 
  }
