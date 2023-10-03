@@ -160,6 +160,9 @@ main {
     text-align: center;
 }
 
+.three-buttons {
+    display: none;
+}
 
 .interaction-button {
     display: flex;

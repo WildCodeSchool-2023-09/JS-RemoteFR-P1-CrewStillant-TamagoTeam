@@ -4,7 +4,7 @@ let petName = document.querySelector("#pet-name");
 
 /* Stats */
 
-let food
+let food;
 let water;
 let health;
 
