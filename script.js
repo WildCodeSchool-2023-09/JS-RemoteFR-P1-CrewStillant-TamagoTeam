@@ -98,3 +98,14 @@ function gameOver(){
     clearInterval(decrementation);
     }
 }
+
+
+
+
+/*TO-DO LIST;
+
+Pas Listé: faire les animations à l'état normal, 50% Food/Water et Malade.
+L11 (Nom): Améliorer le système de démarrage du jeu quand un nom est entré
+L92 (gameover): Faire disparaitre le dragon
+
+*/
