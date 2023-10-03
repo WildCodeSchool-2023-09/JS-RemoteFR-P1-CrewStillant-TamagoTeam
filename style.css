@@ -11,7 +11,7 @@
     --whiteColor : #F5F5F5;
     --redColor : #D05353;
     --myBorder : solid black;
-    --myBorderWidth : 1.5px;
+    --myBorderWidth : 2px;
     --myBorderRadius : 7px;
     --primaryFont : "Irish Grover",
 
@@ -214,10 +214,19 @@ main {
     gap: 2rem;
     list-style-type: none;
     background-color: var(--whiteColor);
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
     border: var(--myBorder);
     border-radius: var(--myBorderRadius);
     border-width: var(--myBorderWidth);
+
+}
+/* section du texte des instructions */
+.instructions li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /*Section Commentaire*/
@@ -289,14 +298,37 @@ main {
  }
 
  .theTeam {
-    margin: 0 0 0 0;
+    margin: 0 0 3rem 0;
     background-color: var(--whiteColor);
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
     border: var(--myBorder);
     border-radius: var(--myBorderRadius);
     border-width: var(--myBorderWidth);
 
  }
+  .theTeam li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+  .theTeam li div h3,p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    
+  }
+ #text_pierre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+ }
+
+
+  .theTeam img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
 
 /*Footer*/
 
