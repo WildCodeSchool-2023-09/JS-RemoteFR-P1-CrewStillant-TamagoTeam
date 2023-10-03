@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -16,20 +17,20 @@
         <h1 class="pet-name">Dragoti</h1>
     </header>
     <nav>
-<!-- la nav barre avec 2sections : le logo et les boutons -->
+    <!-- la nav barre avec 2sections : le logo et les boutons -->
+    
         <section class ="logo">
-            <img id ="logoImg" alt="logo">
+        
         </section>
-
-        <section class="button-section">
-             <ul class="nav-buttons">
-                <li><a href ="#instructions">Inst.</a></li>
-                <li><a href="#avis">Comm.</a></li>
-                <li><a href = "#Equipe">Equipe</a></li>
-            </ul>
-        </section>
-    </nav>
-    <main>
+            <section class="button-section">
+                <ul class="nav-buttons">
+                    <li><a href ="#firstsection" class="link-button">Inst.</a></li>
+                    <li><a href="#sectionTwo" class="link-button">Comm.</a></li>
+                    <li><a href = "#sectionThree" class ="link-button">Equipe</a></li>
+                </ul>
+            </section>
+        </nav>
+        <main>
         <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
 <!-- section1 -->
         <section class = "dragonGame">
@@ -55,57 +56,66 @@
 <!-- section 3 les boutons -->
 
         <section class="threeButtons">
-            <button class="foodButton">Food</button>
-            <button class="waterButton">Water</button>
-            <button class="healthButton">Health</button>
+            <button class="foodButton"><img src="Picture\bouton viande.jpg"></button>
+            <button class="waterButton"><img src="Picture\bouton eau.jpg"></button>
+            <button class="healthButton"><img src="Picture\bouton soin.jpg"></button>
         </section>
 
 <!-- section 4  les instruc-->
 
-        <section>
+        <section id="firstsection">
             <h2 id="instruction">Instructions</h2>
             <ul class ="instructions">
-                <img id = "meat" alt="meat">
-                <li>Nourris ton dragon!</li>
-                <img id = "water" alt ="water">
-                <li>Donnes-lui à boire!!</li>
-                <img id="medicine" alt="medicine">
-                <li>Prends soin de lui!!!</li>
+                <img id = "meat" alt="meat" src="Picture\bouton viande.jpg">
+                <li>Nourris ton dragon !</li>
+                <img id = "water" alt ="water" src="Picture\bouton eau.jpg">
+                <li>Donnes-lui à boire !!</li>
+                <img id="medicine" alt="medicine" src="Picture\bouton soin.jpg">
+                <li>Prends soin de lui !!!</li>
             </ul>
         </section>
+
 <!-- section 5 les commentaires-->
 
 
-        <section class="reviews">
+        <section id="sectionTwo">
+
             <h2 id="review">Commentaires</h2>
-            <form action ="">
+            <form class="reviews" action ="">
                 <label for="pseudo">Pseudo</label><br>
                 <input type="text" id="pseudo" name="pseudo"> <br>
                 <label for="mail">Mail</label><br>
                 <input type="text" id="mail"><br>
                 <label for="commentaires">Commentaires</label><br>
-                <input type="text" id="commentaires">
+                <input type="text" id="commentaires"><br>
+                <button id="send-button">Envoyer</button>
             </form>
         </section>
  
-        <section class="theTeam">
+
+        <section id="sectionThree">
+
             <h2 id="team">Equipe</h2>
-            <ul>
+            <ul class="theTeam">
                 <li>
-                    <img id="faizPic" alt="Faiza picture">
+                    <img id="faizPic" alt="Faiza picture" src="Picture\Dragon rouge.jpg">
                     <h3>Faiza</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
                 </li>
                 <li>
                     <h3>Pierre</h3>
-                    <img id="pierrPic" alt="Pierre picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
+                    <img id="pierrPic" alt="Pierre picture" src="Picture\Dragon jaune.jpg">
                 </li>
                 <li>
-                    <img id="gaelPic" alt ="Gael picture">
+                    <img id="gaelPic" alt ="Gael picture" src="Picture\Dragon vert.jpg">
                     <H3>Gael</H3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
                 </li>
                 <li>
                     <h3>Thierry</h3>
-                    <img id="thierrPic" alt="Thierry picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
+                    <img id="thierrPic" alt="Thierry picture" src="Picture\Dragon bleu.jpg">
                 </li>
             </ul>
         </section>
