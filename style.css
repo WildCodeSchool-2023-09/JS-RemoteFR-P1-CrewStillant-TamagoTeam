@@ -34,7 +34,7 @@ nav{
 .logo{
     align-items: flex-start;
     background-color: var(--pinkColor);
-    background-image: url(logo_tamagotchi\ 1.png);
+    background-image: url(/Divers/logo_tamagotchi\ 1.png);
     background-size: cover;
     padding: 2.8rem;
     border: var(--myBorder);
@@ -46,7 +46,7 @@ nav{
 }
 
 
-.pet-name{
+#pet-name{
     display: flex;
     justify-content: center ;
     padding-left: 5rem;
@@ -61,11 +61,11 @@ nav{
     /* position: fixed; */
 
 }
+
 .button-section {
     padding-left: 0rem;
 
 }
-
 
 .nav-buttons{
     display: flex;
@@ -96,12 +96,24 @@ main {
     flex-direction: column;
     justify-content: space-around;
     gap: 3rem;
-
-
 }
 
 .dragonGame {
     background-color: var(--secondaryBlue);
+    border-radius: var(--myBorderRadius);
+    text-align: center;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+/*Section Nomme le Dragon et Boutons*/
+
+.dragon-game {
+    display: contents;
 }
 
 .nameTheDragon {
@@ -109,23 +121,57 @@ main {
     border: var(--myBorder);
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
-    padding-left: 30%;
+    padding: 0 2rem 0 2rem;
+}
+
+.defaultBox {
+    display: contents;
+    text-align: center;
+}
+
+.secondBox {
+    display: none;
+}
+
+.secondBox>form {
+    display: flex;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.playButton {
+    margin: 0 7rem 0 7rem;
+    border-radius: var(--myBorderRadius);
+    border: none;
+
 }
 
 #dName {
-    background-color: var(--pinkColor);
+    background-color: var(--whiteColor);
     border: none;
+    border-radius: var(--myBorderRadius);
     padding: 100;
+    height: 1.5rem;
 }
 
-.threeButtons {
+.thirdBox {
+    display: none;
+    text-align: center;
+}
+
+.three-buttons {
+    display: none;
+}
+
+
+.interaction-button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-
-
+/*Section Instruction*/
 
 #instruction {
 

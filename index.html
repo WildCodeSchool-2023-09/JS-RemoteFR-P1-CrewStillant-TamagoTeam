@@ -14,7 +14,7 @@
 <body>
     <header> 
 <!-- ici le header c.a.dire le nom de la bestiole -->
-        <h1 class="pet-name">Dragoti</h1>
+        <h1 id="pet-name">Dragoti</h1>
     </header>
     <nav>
     <!-- la nav barre avec 2sections : le logo et les boutons -->
@@ -31,34 +31,47 @@
             </section>
         </nav>
         <main>
+
         <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
 <!-- section1 -->
+
         <section class = "dragonGame">
 
-            <section class="dragonPicAlert">
-                <img class="dragonStates" alt="état du dragon"> 
-            </section>
-            <h2 class="alert">Hello!</h2>
- 
+            <div class="dragonPicAlert">
+                <img src="Dragon Tamagotchi/Normal 1.png" height="200" width="200" class="dragonStates" alt="état du dragon"> 
+            </div>
+            <h3 class="alert">Hello!</h3>
         </section>
 
 <!-- section 2 nommer le dragon-->
+        <section class="dragon-game">
+            <section class="nameTheDragon">
+                <div class="defaultBox">
+                    <h2>Nommes ton Dragon !</h2>
+                </div>
 
-        <section class="nameTheDragon">
-            <form action=""> 
-                <!-- faut définir l'action? -->
-                <label for="dName">Nommes ton dragon</label><br>
-                <input type="text" id=dName name="dName">
-                <button type="button" class="playButton">Confirm Name</button>
-            </form>
+                <div class="secondBox">
+                    <form action=""> 
+                        <label for="dName"></label>
+                        <input type="text" id="dName" name="dName">
+                        <button type="button" class="playButton">Valider</button>
+                    </form>
+                </div>
+
+                <div class="thirdBox">
+                    <p>Bienvenu , tu es prêt à jouer !</p>
+                </div>
+            </section>
         </section>
 
-<!-- section 3 les boutons -->
+<!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
 
-        <section class="threeButtons">
-            <button class="foodButton"><img src="Picture\bouton viande.jpg"></button>
-            <button class="waterButton"><img src="Picture\bouton eau.jpg"></button>
-            <button class="healthButton"><img src="Picture\bouton soin.jpg"></button>
+        <section class="three-buttons">
+            <div class="interaction-button">
+                <button id="food-Button"><img src="/Divers/bouton viande.jpg"></button>
+                <button id="water-Button"><img src="/Divers/bouton eau.jpg"></button>
+                <button id="health-Button"><img src="/Divers/bouton soin.jpg"></button>
+            </div>
         </section>
 
 <!-- section 4  les instruc-->
@@ -66,11 +79,11 @@
         <section id="firstsection">
             <h2 id="instruction">Instructions</h2>
             <ul class ="instructions">
-                <img id = "meat" alt="meat" src="Picture\bouton viande.jpg">
+                <img id = "meat" alt="meat" src="/Divers/bouton viande.jpg">
                 <li>Nourris ton dragon !</li>
-                <img id = "water" alt ="water" src="Picture\bouton eau.jpg">
+                <img id = "water" alt ="water" src="/Divers/bouton eau.jpg">
                 <li>Donnes-lui à boire !!</li>
-                <img id="medicine" alt="medicine" src="Picture\bouton soin.jpg">
+                <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg">
                 <li>Prends soin de lui !!!</li>
             </ul>
         </section>
@@ -98,24 +111,24 @@
             <h2 id="team">Equipe</h2>
             <ul class="theTeam">
                 <li>
-                    <img id="faizPic" alt="Faiza picture" src="Picture\Dragon rouge.jpg">
+                    <img id="faizPic" alt="Faiza picture" src="/Divers/Dragon rouge.jpg">
                     <h3>Faiza</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
                 </li>
                 <li>
                     <h3>Pierre</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                    <img id="pierrPic" alt="Pierre picture" src="Picture\Dragon jaune.jpg">
+                    <img id="pierrPic" alt="Pierre picture" src="/Divers/Dragon jaune.jpg">
                 </li>
                 <li>
-                    <img id="gaelPic" alt ="Gael picture" src="Picture\Dragon vert.jpg">
+                    <img id="gaelPic" alt ="Gael picture" src="/Divers/Dragon vert.jpg">
                     <H3>Gael</H3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
                 </li>
                 <li>
                     <h3>Thierry</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                    <img id="thierrPic" alt="Thierry picture" src="Picture\Dragon bleu.jpg">
+                    <img id="thierrPic" alt="Thierry picture" src="/Divers/Dragon bleu.jpg">
                 </li>
             </ul>
         </section>
