@@ -160,15 +160,42 @@ main {
     text-align: center;
 }
 
-.three-buttons {
-    display: none;
-}
-
 
 .interaction-button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+#food-Button {
+    background-color: var(--primaryBlue);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-shadow: none;
+    border: none;
+
+    
+    
+}
+#water-Button {
+    background-color: var(--primaryBlue);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-radius: 27px;
+    box-shadow: none;
+    border: none;
+    
+}
+
+#health-Button {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-radius: 27px;
+    background-color: var(--primaryBlue);
+    box-shadow: none;
+    border: none;
+
+    
 }
 
 /*Section Instruction*/
