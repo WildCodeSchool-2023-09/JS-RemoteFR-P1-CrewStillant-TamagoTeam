@@ -105,23 +105,22 @@ healthBtn.addEventListener("click", function(){
 
 
 /* Chrono décrémentation des stats toute les deux secondes*/
-playBtn.addEventListener("click", function(){
-if (gameStart === "true"){
-    decrementation = setInterval(decrease, 2000)
-        function decrease(){
-            food-=2;
-            water-=3;
-            health--;
+
+setInterval(decrease, 2000)
+function decrease(){
+    if (gameStart === "true"){
+        food-=2;
+        water-=3;
+        health--;
     }
 }
-})
 
 /* Limitation à 100 des barres de besoins*/
 setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
         food = 100;
-        health --; // Malus de sur-alimentation //
+        health --;
         console.log("Food limit bypassed: restored to 100");
         document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
     }
@@ -141,25 +140,55 @@ function inspection(){
     }
 }
 
-/* Detection Game Over */
+/* Changement de Status + Malus + message d'alerte */
 
-setInterval(gameOver, 500)
-function gameOver(){
+statusInterval = setInterval(dragonStatus, 500)
+function dragonStatus(){
+    if (food > 50 && water > 50 && health > 50) {
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Normal 1.png"
+        document.getElementsByClassName("alert")[0].innerHTML = "I'm Okay.";
 
-    if (health <= 0){
-    //Faire disparaitre le dragon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    gameStart = "false";
-    document.getElementsByClassName("alert")[0].innerHTML = "Game Over.";
-    console.log("Game Over reached, shutting down game until restart.")
-    window.alert("Game Over");
-    health = 100;
-    clearInterval(decrementation);
+    } else if (health < 50){
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sick 1.png"
+        document.getElementsByClassName("alert")[0].innerHTML = "I'm Sick.";
+        health--;
+        health--;
+
+    } else if (food < 50){
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad 1.png"
+        document.getElementsByClassName("alert")[0].innerHTML = "I'm hungry.";
+        health--;
+        health--;
+
+    } else if (water < 50){
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad 1.png"
+        document.getElementsByClassName("alert")[0].innerHTML = "I'm thirsty.";
+        health--;
+        health--;
     }
 }
 
-/*TO-DO LIST;
 
-Pas Listé: faire les animations à l'état normal, 50% Food/Water et Malade.
-L11 (Nom): Améliorer le système de démarrage du jeu quand un nom est entré
-L92 (gameover): Faire disparaitre le dragon
-*/
+/* Detection Game Over */
+
+overInterval = setInterval(gameOver, 500)
+function gameOver(){
+
+    if (health <= 0){
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/dragonGameOver.png"
+        gameStart = "false";
+        document.getElementsByClassName("alert")[0].innerHTML = "Game Over.";
+        console.log("Game Over reached, shutting down game until restart.")
+        clearInterval(statusInterval);
+        clearInterval(overInterval);
+        document.querySelector(".game-over").style.display = "contents";
+        document.querySelector(".three-buttons").style.display = "none";
+}
+}
+
+/* Reset du jeu */
+
+const gameOverBtn = document.querySelector(".game-over");
+gameOverBtn.addEventListener("click", function(){
+    location.reload();
+});

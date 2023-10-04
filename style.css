@@ -209,6 +209,10 @@ main {
     background-color: var(--primaryBlue);   
 }
 
+.game-over{
+    display: none;
+}
+
 /*Section Instruction*/
 
 #instruction {
