@@ -13,8 +13,7 @@ let health;
 /*apparition de la zone pour donner le nom du dragon*/
 
 const initiateGame = document.querySelector(".defaultBox");
-const displaySecondBox =document.querySelector(".secondBox");
-initiateGame.addEventListener("click", () => displaySecondBox.style.display = "contents");
+initiateGame.addEventListener("click", () => document.querySelector(".secondBox").style.display = "contents");
 
 /*puis message validation lancement jeu*/
 
@@ -26,23 +25,16 @@ const playBtn = document.querySelector(".playButton");
 const newName = document.querySelector("#dName");
 newName.addEventListener("change", function () {
     petName.textContent = this.value
-    
 });
 
 /*Le message de validation du nom remplace le reste puis les 3 boutons s'affichent*/
 
-const confirmName = document.querySelector(".secondBox");
-const displayThirdBox = document.querySelector(".thirdBox");
-const displayDragonGame = document.querySelector(".dragon-game")
-const threeButton = document.querySelector(".three-buttons");
-
-
 playBtn.addEventListener("click", () => {
-    initiateGame.style.display = "none";
-    displaySecondBox.style.display = "none";
-    displayThirdBox.style.display = "contents";
-    setTimeout(() => {displayDragonGame.style.display = "none";
-    threeButton.style.display = "contents"}, 3000);
+    document.querySelector(".defaultBox").style.display = "none";
+    document.querySelector(".secondBox").style.display = "none";
+    document.querySelector(".thirdBox").style.display = "contents";
+    setTimeout(() => {document.querySelector(".dragon-game").style.display = "none";
+    document.querySelector(".three-buttons").style.display = "contents"}, 3000);
     });
 
 /* Quand le nom du dragon est validé */
