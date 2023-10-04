@@ -22,9 +22,9 @@
         <nav>
             <div class="button-section">
                 <ul class="nav-buttons">
-                    <li><a href ="#firstsection" class="link-button">Instr.</a></li>
-                    <li><a href="#sectionTwo" class="link-button">Comm.</a></li>
-                    <li><a href = "#sectionThree" class ="link-button">Equipe</a></li>
+                    <li><a href ="#directToInstruc" class="link-button">Instr.</a></li>
+                    <li><a href="#medicine" class="link-button">Comm.</a></li>
+                    <li><a href = "#send-button" class ="link-button">Equipe</a></li>
 
                 </ul>
             </div>
@@ -46,7 +46,7 @@
 
 <!-- section 2 nommer le dragon-->
         <section class="dragon-game">
-            <section class="nameTheDragon">
+            <section class="nameTheDragon" id="directToInstruc">
                 <div class="defaultBox">
                     <h2>Nommes ton Dragon !</h2>
                 </div>
@@ -79,6 +79,7 @@
 
         <section id="firstsection">
             <h2 id="instruction">Instructions</h2>
+
             <ul class ="instructions">
                 <img id = "meat" alt="meat" src="/Divers/bouton viande.jpg">
                 <li>Nourris ton dragon !</li>
@@ -86,7 +87,9 @@
                 <li>Donnes-lui à boire !!</li>
                 <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg">
                 <li>Prends soin de lui !!!</li>
+
             </ul>
+            <span id="triche"></span>
         </section>
 
 <!-- section 5 les commentaires-->
@@ -104,7 +107,7 @@
                     <label for="mail">Mail</label><br>
                     <input type="text" id="mail"><br>
                 </span>
-                <span class="form-comment">
+                <span class="form-comment" id="triche1">
                     <label for="commentaires">Commentaires</label><br>
                     <input type="text" id="commentaires"><br>
                 </span>
@@ -124,14 +127,14 @@
                     <!-- div pour le texte pour optimiser l'afichage -->
 
                     <div class="text-equipe">
-                        <h3>Faiza</h3>
+                        <h2>Faiza</h2>
                         <p>Lorem ipsum dolor sit amet consecte?</p>
                     </div>
                 </li>
                 <li class="right">
                     <img id="pierrPic" alt="Pierre picture" src="/Divers/Dragon jaune.jpg">
                     <div class="text-equipe-right">
-                        <h3>Pierre</h3>
+                        <h2>Pierre</h2>
                         <p>Un dragon proche de Nantes qui aime courir !</p>
 
                     </div>
@@ -140,14 +143,14 @@
                     <img id="gaelPic" alt ="Gael picture" src="/Divers/Dragon vert.jpg">
 
                     <div class="text-equipe-right">
-                        <H3>Gael</H3>
+                        <h2>Gael</h2>
                         <p>Lorem ipsum dolor sit amet consect?</p>
                     </div>
                 </li>
                 <li class="right">
                     <img id="thierrPic" alt="Thierry picture" src="/Divers/Dragon bleu.jpg">
                     <div class="text-equipe">
-                        <h3>Thierry</h3>
+                        <h2>Thierry</h2>
 
                         <p>Lorem ipsum dolor sit amet conse</p>
                     </div>

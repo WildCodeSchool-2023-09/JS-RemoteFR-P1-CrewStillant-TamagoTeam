@@ -64,7 +64,7 @@ nav{
 #pet-name{
     display: flex;
     justify-content: center ;
-    padding: 0;
+    padding: 0 0 0 5rem;
     font-size: 3rem;
     background-color: var(--secondaryBlue);
     margin: 0 0 .5rem 0 ;
@@ -84,7 +84,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.5rem;
     list-style-type: none;
     background-color: var(--whiteColor);
     border: var(--myBorder);
@@ -242,6 +242,7 @@ main {
 
 }
 
+
 /*Section Commentaire*/
 
 #review {
@@ -327,6 +328,7 @@ main {
     gap: 1rem;
 }
 
+
 .right {
     display: flex;
     flex-direction: row-reverse;
@@ -353,11 +355,19 @@ main {
     margin: 0;
 }
 
+.text-equipe h2 {
+    margin: 0;
+}
+
+.text-equipe-right h2 {
+    margin: 0 ;
+}
+
 .theTeam img {
     width: 5rem;
     height: 5rem;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
   /* .theTeam li div h3 */
@@ -371,4 +381,8 @@ footer{
     border-width: var(--myBorderWidth);
     text-align: center;
     margin-top: 1rem;
+}
+
+#triche {
+
 }
