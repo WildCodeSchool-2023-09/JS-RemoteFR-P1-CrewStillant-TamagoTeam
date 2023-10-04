@@ -211,6 +211,10 @@ main {
     
 }
 
+.game-over{
+    display: none;
+}
+
 /*Section Instruction*/
 
 #instruction {
