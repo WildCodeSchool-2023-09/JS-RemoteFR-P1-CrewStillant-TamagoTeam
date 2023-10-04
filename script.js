@@ -26,6 +26,7 @@ const playBtn = document.querySelector(".playButton");
 const newName = document.querySelector("#dName");
 newName.addEventListener("change", function () {
     petName.textContent = this.value
+    
 });
 
 /*Le message de validation du nom remplace le reste puis les 3 boutons s'affichent*/
@@ -35,22 +36,14 @@ const displayThirdBox = document.querySelector(".thirdBox");
 const displayDragonGame = document.querySelector(".dragon-game")
 const threeButton = document.querySelector(".three-buttons");
 
-function displayButtons() {
-    displayDragonGame.style.display = "none";
-    threeButton.style.display = "contents";
-}
 
 playBtn.addEventListener("click", () => {
     initiateGame.style.display = "none";
     displaySecondBox.style.display = "none";
     displayThirdBox.style.display = "contents";
-    setTimeout(displayButtons, 3000);
+    setTimeout(() => {displayDragonGame.style.display = "none";
+    threeButton.style.display = "contents"}, 3000);
     });
-
-
-
-
-
 
 /* Quand le nom du dragon est validé */
 playBtn.addEventListener("click", function() {
@@ -70,21 +63,44 @@ const healthBtn = document.querySelector("#health-Button");
 
 let petAlert = document.querySelector(".alert");
 
+/*Modif du style des boutons d'interraction au survol*/
+
+foodBtn.addEventListener("mouseover", () => {
+    foodBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => foodBtn.style.boxShadow = "none", 250);
+});
+
+waterBtn.addEventListener("mouseover", () => {
+    waterBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => waterBtn.style.boxShadow = "none", 250);
+});
+
+healthBtn.addEventListener("mouseover", () => {
+    healthBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => healthBtn.style.boxShadow = "none", 250);
+});
+
 /* Actions suite à appui d'un bouton */
 
 foodBtn.addEventListener("click", function(){
     food+=10;
     console.log(`Food: ${food}`);
+    foodBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => foodBtn.style.boxShadow = "none", 250);
 });
 
 waterBtn.addEventListener("click", function(){
     water+=10;
-    console.log(`Water: ${water}`)
+    console.log(`Water: ${water}`);
+    waterBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => waterBtn.style.boxShadow = "none", 250);
 });
 
 healthBtn.addEventListener("click", function(){
     health+=10;
     console.log(`Health: ${health}`);
+    healthBtn.style.boxShadow = "3px 3px 4px 2px black";
+    setTimeout(() => healthBtn.style.boxShadow = "none", 250);
 });
 
 
