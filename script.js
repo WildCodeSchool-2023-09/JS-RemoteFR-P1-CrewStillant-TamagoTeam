@@ -66,17 +66,17 @@ let petAlert = document.querySelector(".alert");
 /*Modif du style des boutons d'interraction au survol*/
 
 foodBtn.addEventListener("mouseover", () => {
-    foodBtn.style.boxShadow = "3px 3px 4px 2px black outset";
+    foodBtn.style.boxShadow = "3px 3px 4px 2px black";
     setTimeout(() => foodBtn.style.boxShadow = "none", 250);
 });
 
 waterBtn.addEventListener("mouseover", () => {
-    waterBtn.style.boxShadow = "3px 3px 4px 2px black outset";
+    waterBtn.style.boxShadow = "3px 3px 4px 2px black";
     setTimeout(() => waterBtn.style.boxShadow = "none", 250);
 });
 
 healthBtn.addEventListener("mouseover", () => {
-    healthBtn.style.boxShadow = "3px 3px 4px 2px black outset";
+    healthBtn.style.boxShadow = "3px 3px 4px 2px black";
     setTimeout(() => healthBtn.style.boxShadow = "none", 250);
 });
 
@@ -92,14 +92,14 @@ foodBtn.addEventListener("click", function(){
 waterBtn.addEventListener("click", function(){
     water+=10;
     console.log(`Water: ${water}`);
-    waterBtn.style.boxShadow = "3px 3px 4px 2px black inset";
+    waterBtn.style.boxShadow = "3px 3px 4px 2px black";
     setTimeout(() => waterBtn.style.boxShadow = "none", 250);
 });
 
 healthBtn.addEventListener("click", function(){
     health+=10;
     console.log(`Health: ${health}`);
-    healthBtn.style.boxShadow = "3px 3px 4px 2px black inset";
+    healthBtn.style.boxShadow = "3px 3px 4px 2px black";
     setTimeout(() => healthBtn.style.boxShadow = "none", 250);
 });
 
