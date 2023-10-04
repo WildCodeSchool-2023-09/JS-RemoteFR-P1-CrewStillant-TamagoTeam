@@ -18,70 +18,79 @@
     /* font a intégrer au code */
 }
 
+header {
+    margin: .5rem 0 .5rem 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 95%;
+}
+
 body{
     background-color: var(--primaryBlue);
     margin-left: 1rem;
     margin-right: 1rem;
-
 }
+
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-
+    margin-bottom: 1rem;
 }
+
 .logo{
     align-items: flex-start;
-    background-color: var(--pinkColor);
-    background-image: url(/Divers/logo_tamagotchi\ 1.png);
-    background-size: cover;
-    padding: 2.8rem;
-    border: var(--myBorder);
-    border-radius: 100%;
-    border-width: 2px;
-    z-index: 2;
+    background-color: var(--primaryBlue);
+    padding: none;
     /* position: fixed; */
-
 }
 
+#logo-dragoti {
+    background-color: var(--pinkColor);
+    border-radius: 100%;
+    border-width: 2px;
+    border: var(--myBorder);
+    z-index: 3;
+    position: absolute;
+}
 
 #pet-name{
     display: flex;
     justify-content: center ;
-    padding-left: 5rem;
+    padding: 0;
     font-size: 3rem;
     background-color: var(--secondaryBlue);
-    margin: 0 0 0 0 ;
+    margin: 0 0 .5rem 0 ;
     border:solid black;
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
-    z-index: 1;
+    z-index: 2;
     font-family: var(--primaryFont), sans-serif ;
     /* position: fixed; */
-
 }
 
 .button-section {
     padding-left: 0rem;
-
 }
 
 .nav-buttons{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
     list-style-type: none;
     background-color: var(--whiteColor);
     border: var(--myBorder);
     border-width: var(--myBorderWidth);
     border-radius: var(--myBorderRadius);
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-    margin-left: 0rem;
     z-index: 1;
-
 }
+
 li a {
     text-decoration: none;
     background-color: var(--pinkColor);
@@ -92,6 +101,7 @@ li a {
 }
 
 main {
+    margin-top: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -160,6 +170,9 @@ main {
     text-align: center;
 }
 
+.three-buttons {
+    display: none;
+}
 
 .interaction-button {
     display: flex;
@@ -338,5 +351,6 @@ main {
     border-radius: var(--myBorderRadius);
     border-width: var(--myBorderWidth);
     text-align: center;
+    margin-top: 1rem;
 
  }
