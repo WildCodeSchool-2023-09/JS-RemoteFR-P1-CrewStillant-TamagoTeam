@@ -18,6 +18,10 @@
     /* font a intégrer au code */
 }
 
+.upward-margin {
+    margin-top: 50px;
+}
+
 header {
     margin: .5rem 0 .5rem 0;
     display: flex;
@@ -323,9 +327,10 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    font-size: 80%;
 
   }
-  .theTeam li div h3,p {
+  .theTeam li div h2,p {
     margin-top: 0;
     margin-bottom: 0.5rem;
     
@@ -334,14 +339,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+ }
+
+ #text_thierry  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
  }
 
 
+
   .theTeam img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     margin-bottom: 1rem;
   }
+
+  /* .theTeam li div h3 */
 
 /*Footer*/
 
