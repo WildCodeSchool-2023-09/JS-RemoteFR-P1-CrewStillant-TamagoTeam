@@ -1,170 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dragoti</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 768px)"
+      href="style.css"
+    />
+  </head>
 
+  <body>
+    <header>
+      <span class="logo">
+        <img
+          src="/Divers/logo_tamagotchi 1.png"
+          id="logo-dragoti"
+          height="110"
+          width="110"
+          alt="Logo Dragoti"
+        />
+        <h1 id="pet-name">Dragoti</h1>
+      </span>
 
-</head>
-
-<body>
-    <header> 
-        <span class ="logo">
-            <img src="/Divers/logo_tamagotchi 1.png" id="logo-dragoti" height="110" width="110" alt="Logo Dragoti">
-            <h1 id="pet-name">Dragoti</h1>
-        </span>
-
-        <nav>
-            <div class="button-section">
-                <ul class="nav-buttons">
-                    <li><a href ="#directToInstruc" class="link-button">Instr.</a></li>
-                    <li><a href="#medicine" class="link-button">Comm.</a></li>
-                    <li><a href = "#send-button" class ="link-button">Equipe</a></li>
-
-                </ul>
-            </div>
-         </nav>
+      <nav>
+        <div class="button-section">
+          <ul class="nav-buttons">
+            <li><a href="#directToInstruc" class="link-button">Instr.</a></li>
+            <li><a href="#medicine" class="link-button">Comm.</a></li>
+            <li><a href="#send-button" class="link-button">Equipe</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-        <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
-<!-- section1 -->
-
-        <section class = "dragonGame">
-
-            <div class="dragonPicAlert">
-                <img src="Dragon Tamagotchi/Normal 1.png" height="200" width="200" class="dragonStates" alt="état du dragon"> 
-            </div>
-            <h3 class="alert">Hello!</h3>
+      <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
+      <!-- section1 -->
+      <div class="containerBlocUn">
+        <!--div rajoué par Gael pour le css desktop-->
+        <section class="dragonGame">
+          <div class="dragonPicAlert">
+            <img
+              src="Dragon Tamagotchi/Normal 1.png"
+              height="200"
+              width="200"
+              class="dragonStates"
+              alt="état du dragon"
+            />
+          </div>
+          <h3 class="alert">Hello!</h3>
         </section>
 
-<!-- section 2 nommer le dragon-->
+        <!-- section 2 nommer le dragon-->
         <section class="dragon-game">
-            <section class="nameTheDragon" id="directToInstruc">
-                <div class="defaultBox">
-                    <h2>Quel est mon nom?</h2>
-                </div>
+          <section class="nameTheDragon" id="directToInstruc">
+            <div class="defaultBox">
+              <h2>Quel est mon nom?</h2>
+            </div>
 
-                <div class="secondBox">
-                    <form action=""> 
-                        <label for="dName"></label>
-                        <input type="text" id="dName" name="dName">
-                        <button type="button" class="playButton">Valider</button>
-                    </form>
-                </div>
+            <div class="secondBox">
+              <form action="">
+                <label for="dName"></label>
+                <input type="text" id="dName" name="dName" />
+                <button type="button" class="playButton">Valider</button>
+              </form>
+            </div>
 
-                <div class="thirdBox">
-                    <p>Bienvenu, tu es prêt à jouer !</p>
-                </div>
-            </section>
+            <div class="thirdBox">
+              <p>Bienvenu, tu es prêt à jouer !</p>
+            </div>
+          </section>
         </section>
 
-<!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
+        <!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
 
         <section class="three-buttons" id="directToInstruc">
-            <div class="interaction-button">
-                <button id="food-Button"><img src="/Divers/Icone viande.png"></button>
-                <button id="water-Button"><img src="/Divers/Bouton jeu eau.png"></button>
-                <button id="health-Button"><img src="/Divers/Bouton jeu soin.png"></button>
-            </div>
+          <div class="interaction-button">
+            <button id="food-Button">
+              <img src="/Divers/Icone viande.png" />
+            </button>
+            <button id="water-Button">
+              <img src="/Divers/Bouton jeu eau.png" />
+            </button>
+            <button id="health-Button">
+              <img src="/Divers/Bouton jeu soin.png" />
+            </button>
+          </div>
         </section>
         <section class="game-over" id="directToInstruc">
-            <button id="reset-button">Reset</button>
+          <button id="reset-button">Reset</button>
         </section>
-
-<!-- section 4  les instruc-->
-
+      </div>
+      <!--fermeture div firstblock-->
+      <!-- section 4  les instruc-->
+      <div id="container">
+        <!--div rajoué par Gael pour le css desktop-->
         <section id="firstsection">
-            <h2 id="instruction">Instructions</h2>
+          <h2 id="instruction">Instructions</h2>
 
-            <ul class ="instructions">
-                <img id = "meat" alt="meat" src="/Divers/bouton viande.jpg">
-                <li><h3>Pour me nourrir</h3></li>
-                <img id = "water" alt ="water" src="/Divers/bouton eau.jpg">
-                <li> <h3>Pour m'hydrater</h3></li>
-                <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg">
-                <li><h3>Pour me soigner</h3></li>
-
-            </ul>
+          <ul class="instructions">
+            <img id="meat" alt="meat" src="/Divers/bouton viande.jpg" />
+            <li><h3>Pour me nourrir</h3></li>
+            <img id="water" alt="water" src="/Divers/bouton eau.jpg" />
+            <li><h3>Pour m'hydrater</h3></li>
+            <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg" />
+            <li><h3>Pour me soigner</h3></li>
+          </ul>
         </section>
 
-<!-- section 5 les commentaires-->
-
+        <!-- section 5 les commentaires-->
 
         <section id="sectionTwo">
-
-            <h2 id="review">Commentaires</h2>
-            <form class="reviews" action ="">
-                <span class="form-pseudo">
-                    <label for="pseudo">Pseudo</label><br>
-                    <input type="text" id="pseudo" name="pseudo"> <br>
-                </span>
-                <span class="form-mail">
-                    <label for="mail">Mail</label><br>
-                    <input type="text" id="mail"><br>
-                </span>
-                <span class="form-comment" id="triche1">
-                    <label for="commentaires">Commentaires</label><br>
-                    <input type="text" id="commentaires"><br>
-                </span>
-                <span class="form-button">
-                    <button id="send-button">Envoyer</button>
-                </span>
-            </form>
+          <h2 id="review">Commentaires</h2>
+          <form class="reviews" action="">
+            <span class="form-pseudo">
+              <label for="pseudo">Pseudo</label><br />
+              <input type="text" id="pseudo" name="pseudo" /> <br />
+            </span>
+            <span class="form-mail">
+              <label for="mail">Mail</label><br />
+              <input type="text" id="mail" /><br />
+            </span>
+            <span class="form-comment" id="triche1">
+              <label for="commentaires">Commentaires</label><br />
+              <input type="text" id="commentaires" /><br />
+            </span>
+            <span class="form-button">
+              <button id="send-button">Envoyer</button>
+            </span>
+          </form>
         </section>
- 
+      </div>
+      <!--fermeture div rajouté par Gael pour le css desktop-->
+      <section id="sectionThree">
+        <h2 id="team">Equipe</h2>
+        <ul class="theTeam">
+          <li class="left">
+            <img
+              id="faizPic"
+              alt="Faiza picture"
+              src="/Divers/Dragon rouge.jpg"
+            />
+            <!-- div pour le texte pour optimiser l'afichage -->
 
-        <section id="sectionThree">
+            <div class="text-equipe">
+              <h2>Faiza</h2>
+              <p>Gentille dracène des mers</p>
+            </div>
+          </li>
+          <li class="right">
+            <img
+              id="pierrPic"
+              alt="Pierre picture"
+              src="/Divers/Dragon jaune.jpg"
+            />
+            <div class="text-equipe-right">
+              <h2>Pierre</h2>
+              <p>Un dragon proche de Nantes qui aime courir !</p>
+            </div>
+          </li>
+          <li class="left">
+            <img
+              id="gaelPic"
+              alt="Gael picture"
+              src="/Divers/Dragon vert.jpg"
+            />
 
-            <h2 id="team">Equipe</h2>
-            <ul class="theTeam">
-                <li class="left">
-                    <img id="faizPic" alt="Faiza picture" src="/Divers/Dragon rouge.jpg">
-                    <!-- div pour le texte pour optimiser l'afichage -->
-
-                    <div class="text-equipe">
-                        <h2>Faiza</h2>
-                        <p>Gentille dracène des mers</p>
-                    </div>
-                </li>
-                <li class="right">
-                    <img id="pierrPic" alt="Pierre picture" src="/Divers/Dragon jaune.jpg">
-                    <div class="text-equipe-right">
-                        <h2>Pierre</h2>
-                        <p>Un dragon proche de Nantes qui aime courir !</p>
-
-                    </div>
-                </li>
-                <li class="left">
-                    <img id="gaelPic" alt ="Gael picture" src="/Divers/Dragon vert.jpg">
-
-                    <div class="text-equipe">
-                        <h2>Gael</h2>
-                        <p>Lorem ipsum dolor sit amet consect?</p>
-                    </div>
-                </li>
-                <li class="right">
-                    <img id="thierrPic" alt="Thierry picture" src="/Divers/Dragon bleu.jpg">
-                    <div class="text-equipe-right">
-                        <h2>Thierry</h2>
-                        <p>Lorem ipsum dolor sit amet conse</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+            <div class="text-equipe">
+              <h2>Gael</h2>
+              <p>Lorem ipsum dolor sit amet consect?</p>
+            </div>
+          </li>
+          <li class="right">
+            <img
+              id="thierrPic"
+              alt="Thierry picture"
+              src="/Divers/Dragon bleu.jpg"
+            />
+            <div class="text-equipe-right">
+              <h2>Thierry</h2>
+              <p>Lorem ipsum dolor sit amet conse</p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>© 2023 Wild Code School / Crewstillant / TamagoTeam</footer>
 
     <script src="script.js"></script>
     <script src="styleJS.js"></script>
-    
-</body>
-
+  </body>
 </html>
-
