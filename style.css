@@ -1,256 +1,336 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Irish Grover', cursive;
+* {
+  box-sizing: border-box;
+  font-family: "Irish Grover", cursive;
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); */
 
 :root {
-    --primaryBlue : #5AA9E6;
-    --secondaryBlue: #7FC8F8;
-    --pinkColor : #FA85A6;
-    --whiteColor : #F5F5F5;
-    --redColor : #D05353;
-    --myBorder : solid black;
-    --myBorderWidth : 1.5px;
-    --myBorderRadius : 7px;
-    --primaryFont : "Irish Grover",
-
-    /* font a intégrer au code */
+  --primaryBlue: #5aa9e6;
+  --secondaryBlue: #7fc8f8;
+  --pinkColor: #fa85a6;
+  --whiteColor: #f5f5f5;
+  --redColor: #d05353;
+  --myBorder: solid black;
+  --myBorderWidth: 1.5px;
+  --myBorderRadius: 7px;
+  --primaryFont: "Irish Grover";
+  /* font a intégrer au code */
 }
 
-body{
-    background-color: var(--primaryBlue);
-    margin-left: 1rem;
-    margin-right: 1rem;
-
+body {
+  background-color: var(--primaryBlue);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.logo{
-    align-items: flex-start;
-    background-color: var(--pinkColor);
-    background-image: url(/Divers/logo_tamagotchi\ 1.png);
-    background-size: cover;
-    padding: 2.8rem;
-    border: var(--myBorder);
-    border-radius: 100%;
-    border-width: 2px;
-    z-index: 2;
-    /* position: fixed; */
-
+.logo {
+  align-items: flex-start;
+  background-color: var(--pinkColor);
+  background-image: url(/Divers/logo_tamagotchi\ 1.png);
+  background-size: cover;
+  padding: 2.8rem;
+  border: var(--myBorder);
+  border-radius: 100%;
+  border-width: 2px;
+  z-index: 2;
+  /* position: fixed; */
 }
 
-
-#pet-name{
-    display: flex;
-    justify-content: center ;
-    padding-left: 5rem;
-    font-size: 3rem;
-    background-color: var(--secondaryBlue);
-    margin: 0 0 0 0 ;
-    border:solid black;
-    border-width: var(--myBorderWidth);
-    border-radius: var(--myBorderRadius);
-    z-index: 1;
-    font-family: var(--primaryFont), sans-serif ;
-    /* position: fixed; */
-
+#pet-name {
+  display: flex;
+  justify-content: center;
+  padding-left: 5rem;
+  font-size: 3rem;
+  background-color: var(--secondaryBlue);
+  margin: 0 0 0 0;
+  border: solid black;
+  border-width: var(--myBorderWidth);
+  border-radius: var(--myBorderRadius);
+  z-index: 1;
+  font-family: var(--primaryFont), sans-serif;
+  /* position: fixed; */
 }
 
 .button-section {
-    padding-left: 0rem;
-
+  padding-left: 0rem;
 }
 
-.nav-buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style-type: none;
-    background-color: var(--whiteColor);
-    border: var(--myBorder);
-    border-width: var(--myBorderWidth);
-    border-radius: var(--myBorderRadius);
-    margin: 0 0 0 0;
-    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-    margin-left: 0rem;
-    z-index: 1;
-
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  background-color: var(--whiteColor);
+  border: var(--myBorder);
+  border-width: var(--myBorderWidth);
+  border-radius: var(--myBorderRadius);
+  margin: 0 0 0 0;
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  margin-left: 0rem;
+  z-index: 1;
 }
 li a {
-    text-decoration: none;
-    background-color: var(--pinkColor);
-    color: black;
-    padding: 0.3rem;
-    border-radius: var(--myBorderRadius);
-    font-size: 1.2rem;
+  text-decoration: none;
+  background-color: var(--pinkColor);
+  color: black;
+  padding: 0.3rem;
+  border-radius: var(--myBorderRadius);
+  font-size: 1.2rem;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
 .dragonGame {
-    background-color: var(--secondaryBlue);
-    border-radius: var(--myBorderRadius);
-    text-align: center;
+  background-color: var(--secondaryBlue);
+  border-radius: var(--myBorderRadius);
+  text-align: center;
 }
 
 .alert {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: .5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 /*Section Nomme le Dragon et Boutons*/
 
 .dragon-game {
-    display: contents;
+  display: contents;
 }
 
 .nameTheDragon {
-    background-color: var(--pinkColor);
-    border: var(--myBorder);
-    border-width: var(--myBorderWidth);
-    border-radius: var(--myBorderRadius);
-    padding: 0 2rem 0 2rem;
+  background-color: var(--pinkColor);
+  border: var(--myBorder);
+  border-width: var(--myBorderWidth);
+  border-radius: var(--myBorderRadius);
+  padding: 0 2rem 0 2rem;
 }
 
 .defaultBox {
-    display: contents;
-    text-align: center;
+  display: contents;
+  text-align: center;
 }
 
 .secondBox {
-    display: none;
+  display: none;
 }
 
-.secondBox>form {
-    display: flex;
-    padding-bottom: 1rem;
-    flex-direction: column;
-    gap: .5rem;
+.secondBox > form {
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .playButton {
-    margin: 0 7rem 0 7rem;
-    border-radius: var(--myBorderRadius);
-    border: none;
-
+  margin: 0 7rem 0 7rem;
+  border-radius: var(--myBorderRadius);
+  border: none;
 }
 
 #dName {
-    background-color: var(--whiteColor);
-    border: none;
-    border-radius: var(--myBorderRadius);
-    padding: 100;
-    height: 1.5rem;
+  background-color: var(--whiteColor);
+  border: none;
+  border-radius: var(--myBorderRadius);
+  padding: 100;
+  height: 1.5rem;
 }
 
 .thirdBox {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 
 .three-buttons {
-    display: none;
+  display: none;
 }
 
-
 .interaction-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*Section Instruction*/
 
 #instruction {
-
-    background-color: var(--pinkColor);
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
-    border-width: var(--myBorderWidth);
-    padding-left: 30%;
+  background-color: var(--pinkColor);
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
+  padding-left: 30%;
 }
 .instructions {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2rem;
-    list-style-type: none;
-    background-color: var(--whiteColor);
-    padding: 2rem 2rem 2rem 2rem;
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
-    border-width: var(--myBorderWidth);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  list-style-type: none;
+  background-color: var(--whiteColor);
+  padding: 2rem 2rem 2rem 2rem;
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
 }
 
 /*Section Commentaire*/
 
 #review {
-    background-color: var(--pinkColor);
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
-    border-width: var(--myBorderWidth);
-    padding-left: 30%;
+  background-color: var(--pinkColor);
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
+  padding-left: 30%;
 }
 
 .reviews {
-
-    margin: 0 0 0 0;
-    background-color: var(--whiteColor);
-    padding: 2rem 2rem 2rem 2rem;
-    border: 3px var(--myBorder);
-    border-radius: 10px;
-    border-width: var(--myBorderWidth);
+  margin: 0 0 0 0;
+  background-color: var(--whiteColor);
+  padding: 2rem 2rem 2rem 2rem;
+  border: 3px var(--myBorder);
+  border-radius: 10px;
+  border-width: var(--myBorderWidth);
 }
-
-
 
 #commentaires {
-    width: 200px;
-    height: 100px;
-    }
-
-#send-button {
-    text-align: center;
+  width: 200px;
+  height: 100px;
 }
 
- /*Section Equipe*/
+#send-button {
+  text-align: center;
+}
 
- #team {
-    background-color: var(--pinkColor);
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
-    border-width: var(--myBorderWidth);
-    padding-left: 30%;
+/*Section Equipe*/
 
- }
+#team {
+  background-color: var(--pinkColor);
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
+  padding-left: 30%;
+}
 
- .theTeam {
-    margin: 0 0 0 0;
-    background-color: var(--whiteColor);
-    padding: 2rem 2rem 2rem 2rem;
-    border: var(--myBorder);
-    border-radius: var(--myBorderRadius);
-    border-width: var(--myBorderWidth);
-
- }
+.theTeam {
+  margin: 0 0 0 0;
+  background-color: var(--whiteColor);
+  padding: 2rem 2rem 2rem 2rem;
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
+}
 
 /*Footer*/
 
- footer{
+footer {
+  background-color: var(--pinkColor);
+  border: var(--myBorder);
+  border-radius: var(--myBorderRadius);
+  border-width: var(--myBorderWidth);
+}
+
+@media screen and (min-width: 980px) {
+  #pet-name {
+    display: flex;
+    justify-content: center;
+    width: 52.54088rem;
+    height: 4rem;
+    padding-left: 5rem;
+    font-size: 3rem;
+    background-color: var(--secondaryBlue);
+    margin: 0 0 0 0;
+    border: solid black;
+    border-width: var(--myBorderWidth);
+    border-radius: var(--myBorderRadius);
+    z-index: 1;
+    font-family: var(--primaryFont), sans-serif;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  
+  }
+
+  .nav-buttons {
+    width: 50rem;
+    justify-content: space-around;
+  }
+  .containerBlocUn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .dragonStates {
+    align-items: center;
+  }
+
+  .dragonGame {
+    height: 500px;
+    width: 500px;
+  }
+  /*   #container {
+    justify-items: auto;
+    margin-top: 70px;
+  } */
+
+  #firstsection {
+    float: left;
+    width: 25%;
+    margin-left: 15%;
+    margin-right: 2rem;
+  }
+
+  #sectionTwo {
+    width: 25%;
+    float: right;
+    margin-right: 15%;
+  }
+
+  .interaction-button {
+    display: inline;
+    justify-content: space-around;
+    height: 50px;
+  }
+
+  .nameTheDragon {
+    width: 21.25rem;
+    height: 5rem;
+  }
+
+  #sectionThree {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  #team {
+    display: flex;
+  }
+  footer {
     background-color: var(--pinkColor);
     border: var(--myBorder);
     border-radius: var(--myBorderRadius);
     border-width: var(--myBorderWidth);
-
- }
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    height: 2rem;
+  }
+}

@@ -1,142 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dragoti</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" >
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 768px)"
+      href="style.css"
+    />
+  </head>
 
-<body>
-    <header> 
-<!-- ici le header c.a.dire le nom de la bestiole -->
-        <h1 id="pet-name">Dragoti</h1>
+  <body>
+    <header>
+      <!-- ici le header c.a.dire le nom de la bestiole -->
+      <h1 id="pet-name">Dragoti</h1>
     </header>
     <nav>
-    <!-- la nav barre avec 2sections : le logo et les boutons -->
-    
-        <section class ="logo">
-        
+      <!-- la nav barre avec 2sections : le logo et les boutons -->
+
+      <section class="logo"></section>
+      <section class="button-section">
+        <ul class="nav-buttons">
+          <li><a href="#firstsection" class="link-button">Instructions.</a></li>
+          <li><a href="#sectionTwo" class="link-button">Commentaires.</a></li>
+          <li><a href="#sectionThree" class="link-button">Equipe</a></li>
+        </ul>
+      </section>
+    </nav>
+    <main>
+      <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
+      <!-- section1 -->
+      <div class="containerBlocUn">
+        <section class="dragonGame">
+          <div class="dragonPicAlert">
+            <img
+              src="Dragon Tamagotchi/Normal 1.png"
+              height="200"
+              width="200"
+              class="dragonStates"
+              alt="état du dragon"
+            />
+          </div>
+          <h3 class="alert">Hello!</h3>
         </section>
-            <section class="button-section">
-                <ul class="nav-buttons">
-                    <li><a href ="#firstsection" class="link-button">Inst.</a></li>
-                    <li><a href="#sectionTwo" class="link-button">Comm.</a></li>
-                    <li><a href = "#sectionThree" class ="link-button">Equipe</a></li>
-                </ul>
-            </section>
-        </nav>
-        <main>
 
-        <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
-<!-- section1 -->
-
-        <section class = "dragonGame">
-
-            <div class="dragonPicAlert">
-                <img src="Dragon Tamagotchi/Normal 1.png" height="200" width="200" class="dragonStates" alt="état du dragon"> 
-            </div>
-            <h3 class="alert">Hello!</h3>
-        </section>
-
-<!-- section 2 nommer le dragon-->
+        <!-- section 2 nommer le dragon-->
         <section class="dragon-game">
-            <section class="nameTheDragon">
-                <div class="defaultBox">
-                    <h2>Nommes ton Dragon !</h2>
-                </div>
+          <section class="nameTheDragon">
+            <div class="defaultBox">
+              <h2>Nommes ton Dragon !</h2>
+            </div>
 
-                <div class="secondBox">
-                    <form action=""> 
-                        <label for="dName"></label>
-                        <input type="text" id="dName" name="dName">
-                        <button type="button" class="playButton">Valider</button>
-                    </form>
-                </div>
+            <div class="secondBox">
+              <form action="">
+                <label for="dName"></label>
+                <input type="text" id="dName" name="dName" />
+                <button type="button" class="playButton">Valider</button>
+              </form>
+            </div>
 
-                <div class="thirdBox">
-                    <p>Bienvenu , tu es prêt à jouer !</p>
-                </div>
-            </section>
+            <div class="thirdBox">
+              <p>Bienvenu , tu es prêt à jouer !</p>
+            </div>
+          </section>
         </section>
 
-<!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
+        <!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
 
         <section class="three-buttons">
-            <div class="interaction-button">
-                <button id="food-Button"><img src="/Divers/bouton viande.jpg"></button>
-                <button id="water-Button"><img src="/Divers/bouton eau.jpg"></button>
-                <button id="health-Button"><img src="/Divers/bouton soin.jpg"></button>
-            </div>
+          <div class="interaction-button">
+            <button id="food-Button">
+              <img src="/Divers/bouton viande.jpg" />
+            </button>
+            <button id="water-Button">
+              <img src="/Divers/bouton eau.jpg" />
+            </button>
+            <button id="health-Button">
+              <img src="/Divers/bouton soin.jpg" />
+            </button>
+          </div>
         </section>
-
-<!-- section 4  les instruc-->
-
+      </div>
+      <!-- section 4  les instruc-->
+      <div id="container">
         <section id="firstsection">
-            <h2 id="instruction">Instructions</h2>
-            <ul class ="instructions">
-                <img id = "meat" alt="meat" src="/Divers/bouton viande.jpg">
-                <li>Nourris ton dragon !</li>
-                <img id = "water" alt ="water" src="/Divers/bouton eau.jpg">
-                <li>Donnes-lui à boire !!</li>
-                <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg">
-                <li>Prends soin de lui !!!</li>
-            </ul>
+          <h2 id="instruction">Instructions</h2>
+          <ul class="instructions">
+            <img id="meat" alt="meat" src="/Divers/bouton viande.jpg" />
+            <li>Nourris ton dragon !</li>
+            <img id="water" alt="water" src="/Divers/bouton eau.jpg" />
+            <li>Donnes-lui à boire !!</li>
+            <img id="medicine" alt="medicine" src="/Divers/bouton soin.jpg" />
+            <li>Prends soin de lui !!!</li>
+          </ul>
         </section>
 
-<!-- section 5 les commentaires-->
-
+        <!-- section 5 les commentaires-->
 
         <section id="sectionTwo">
-
-            <h2 id="review">Commentaires</h2>
-            <form class="reviews" action ="">
-                <label for="pseudo">Pseudo</label><br>
-                <input type="text" id="pseudo" name="pseudo"> <br>
-                <label for="mail">Mail</label><br>
-                <input type="text" id="mail"><br>
-                <label for="commentaires">Commentaires</label><br>
-                <input type="text" id="commentaires"><br>
-                <button id="send-button">Envoyer</button>
-            </form>
+          <h2 id="review">Commentaires</h2>
+          <form class="reviews" action="">
+            <label for="pseudo">Pseudo</label><br />
+            <input type="text" id="pseudo" name="pseudo" /> <br />
+            <label for="mail">Mail</label><br />
+            <input type="text" id="mail" /><br />
+            <label for="commentaires">Commentaires</label><br />
+            <input type="text" id="commentaires" /><br />
+            <button id="send-button">Envoyer</button>
+          </form>
         </section>
- 
+      </div>
 
-        <section id="sectionThree">
-
-            <h2 id="team">Equipe</h2>
-            <ul class="theTeam">
-                <li>
-                    <img id="faizPic" alt="Faiza picture" src="/Divers/Dragon rouge.jpg">
-                    <h3>Faiza</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                </li>
-                <li>
-                    <h3>Pierre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                    <img id="pierrPic" alt="Pierre picture" src="/Divers/Dragon jaune.jpg">
-                </li>
-                <li>
-                    <img id="gaelPic" alt ="Gael picture" src="/Divers/Dragon vert.jpg">
-                    <H3>Gael</H3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                </li>
-                <li>
-                    <h3>Thierry</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse?</p>
-                    <img id="thierrPic" alt="Thierry picture" src="/Divers/Dragon bleu.jpg">
-                </li>
-            </ul>
-        </section>
+      <section id="sectionThree">
+        <h2 id="team">Equipe</h2>
+        <ul class="theTeam">
+          <li>
+            <img
+              id="faizPic"
+              alt="Faiza picture"
+              src="/Divers/Dragon rouge.jpg"
+            />
+            <h3>Faiza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, esse?
+            </p>
+          </li>
+          <li>
+            <h3>Pierre</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, esse?
+            </p>
+            <img
+              id="pierrPic"
+              alt="Pierre picture"
+              src="/Divers/Dragon jaune.jpg"
+            />
+          </li>
+          <li>
+            <img
+              id="gaelPic"
+              alt="Gael picture"
+              src="/Divers/Dragon vert.jpg"
+            />
+            <h3>Gael</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, esse?
+            </p>
+          </li>
+          <li>
+            <h3>Thierry</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, esse?
+            </p>
+            <img
+              id="thierrPic"
+              alt="Thierry picture"
+              src="/Divers/Dragon bleu.jpg"
+            />
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>pied de page</footer>
+    <footer>L'équipe TamagoTeam</footer>
 
     <script src="script.js"></script>
-    
-</body>
-
+  </body>
 </html>
-
