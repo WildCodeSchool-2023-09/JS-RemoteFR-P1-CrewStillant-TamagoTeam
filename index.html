@@ -8,14 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel ="stylesheet" type ="text/css" href="cssDesktop.css">
 
 
 </head>
 
 <body>
+    <span id ="upperPage"></span>
     <header> 
+
         <span class ="logo">
-            <img src="/Divers/logo_tamagotchi 1.png" id="logo-dragoti" height="110" width="110" alt="Logo Dragoti">
+            <a href="#upperPage">
+            <img src="/Divers/logo_tamagotchi 1.png" id="logo-dragoti" height="110" width="110" alt="Logo Dragoti"> </a>
+            
             <h1 id="pet-name">Dragoti</h1>
         </span>
 
@@ -45,6 +50,7 @@
         </section>
 
 <!-- section 2 nommer le dragon-->
+        <span id="directToInstruc"></span>
         <section class="dragon-game">
             <section class="nameTheDragon" id="directToInstruc">
                 <div class="defaultBox">
@@ -54,7 +60,7 @@
                 <div class="secondBox">
                     <form action=""> 
                         <label for="dName"></label>
-                        <input type="text" id="dName" name="dName">
+                        <input type="text" class="input" id="dName" name="dName">
                         <button type="button" class="playButton">Valider</button>
                     </form>
                 </div>
@@ -67,14 +73,14 @@
 
 <!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
 
-        <section class="three-buttons" id="directToInstruc">
+        <section class="three-buttons">
             <div class="interaction-button">
                 <button id="food-Button"><img src="/Divers/Icone viande.png"></button>
                 <button id="water-Button"><img src="/Divers/Bouton jeu eau.png"></button>
                 <button id="health-Button"><img src="/Divers/Bouton jeu soin.png"></button>
             </div>
         </section>
-        <section class="game-over" id="directToInstruc">
+        <section class="game-over">
             <button id="reset-button">Reset</button>
         </section>
 
