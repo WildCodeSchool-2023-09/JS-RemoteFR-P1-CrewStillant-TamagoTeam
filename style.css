@@ -76,9 +76,11 @@ nav{
     /* position: fixed; */
 }
 
+
 .button-section {
     padding-left: 0rem;
 }
+
 
 .nav-buttons{
     display: flex;
@@ -186,8 +188,8 @@ main {
 
 #food-Button {
     background-color: var(--primaryBlue);
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0 ;
     border: none;
     border-radius: 27px;  
 }
@@ -195,15 +197,15 @@ main {
 
 #water-Button {
     background-color: var(--primaryBlue);
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     border: none;
     border-radius: 27px;
 }
 
 #health-Button {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     border-radius: 27px;
     border: none;
     background-color: var(--primaryBlue);   
@@ -226,7 +228,7 @@ main {
 .instructions {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 2rem;
+    gap: 1rem;
     list-style-type: none;
     background-color: var(--whiteColor);
     padding: 1rem 1rem 1rem 1rem;
@@ -244,6 +246,13 @@ main {
     justify-content: center;
     align-items: center;
 
+}
+
+/* section images des instructions */
+
+.instructions img {
+    width: 4rem;
+    height: 4rem;
 }
 
 
