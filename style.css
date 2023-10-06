@@ -25,6 +25,8 @@ html {
     margin-top: 50px;
 }
 
+        /*Header*/
+
 header {
     margin: .5rem 0 .5rem 0;
     display: flex;
@@ -135,7 +137,7 @@ main {
     margin-bottom: .5rem;
 }
 
-/*Section Nomme le Dragon et Boutons*/
+        /*Section Nomme le Dragon et Boutons*/
 
 .dragon-game {
     display: contents;
@@ -216,7 +218,6 @@ main {
     border-radius: 27px;  
 }
 
-
 #water-Button {
     background-color: var(--primaryBlue);
     margin: 0;
@@ -237,7 +238,7 @@ main {
     display: none;
 }
 
-/*Section Instruction*/
+        /*Section Instruction*/
 
 #instruction {
     background-color: var(--pinkColor);
@@ -260,8 +261,6 @@ main {
 
 }
 
-/* section du texte des instructions */
-
 .instructions li {
     display: flex;
     flex-direction: row;
@@ -270,15 +269,13 @@ main {
 
 }
 
-/* section images des instructions */
-
 .instructions img {
     width: 4rem;
     height: 4rem;
 }
 
 
-/*Section Commentaire*/
+        /*Section Commentaire*/
 
 #review {
     background-color: var(--pinkColor);
@@ -337,7 +334,7 @@ main {
     text-align: center;
 }
 
- /*Section Equipe*/
+        /*Section Equipe*/
 
 #team {
     background-color: var(--pinkColor);
@@ -357,7 +354,7 @@ main {
 
 }
 
- .left {
+.left {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -404,8 +401,6 @@ main {
 
     margin-bottom: 2rem;
 }
-
-  /* .theTeam li div h3 */
 
 /*Footer*/
 

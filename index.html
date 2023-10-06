@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <span id ="upperPage"></span>
+    <span id ="upperPage"></span> <!-- Un span pour avoir un retour en haut lorsqu'on clique sur le logo-->
     <header> 
 
+        <!-- la zone Header avec Logo, Titre et Navbar-->
         <span class ="logo">
             <a href="#upperPage">
             <img src="/Divers/logo_tamagotchi 1.png" id="logo-dragoti" height="110" width="110" alt="Logo Dragoti"> </a>
@@ -30,7 +31,6 @@
                     <li><a href ="#directToInstruc" class="link-button">Instr.</a></li>
                     <li><a href="#medicine" class="link-button">Comm.</a></li>
                     <li><a href = "#send-button" class ="link-button">Equipe</a></li>
-
                 </ul>
             </div>
          </nav>
@@ -39,7 +39,8 @@
     <main>
 
         <!-- main composé de 6 sections principales : les états, le nom (qui disparaitra),les boutons,  les instructions, les com et l'equipe -->
-<!-- section1 -->
+
+                <!-- section1 avec l'image du dragon et ses états en message d'alerte-->
 
         <section class = "dragonGame">
 
@@ -49,7 +50,8 @@
             <h3 class="alert">Hello!</h3>
         </section>
 
-<!-- section 2 nommer le dragon-->
+                <!-- section 2 nommer le dragon -->
+
         <span id="directToInstruc"></span>
         <section class="dragon-game">
             <section class="nameTheDragon" id="directToInstruc">
@@ -71,7 +73,7 @@
             </section>
         </section>
 
-<!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
+                <!-- section 3 les boutons qui remplacent la section 2 une fois le nom renseigné! -->
 
         <section class="three-buttons">
             <div class="interaction-button">
@@ -84,7 +86,7 @@
             <button id="reset-button">Nouvelle tentative</button>
         </section>
 
-<!-- section 4  les instruc-->
+                <!-- section 4  les instructions sommaires -->
 
         <section id="firstsection">
             <h2 id="instruction">Instructions</h2>
@@ -100,7 +102,7 @@
             </ul>
         </section>
 
-<!-- section 5 les commentaires-->
+                <!-- section 5 les commentaires -->
 
 
         <section id="sectionTwo">
@@ -124,7 +126,8 @@
                 </span>
             </form>
         </section>
- 
+
+            <!-- section 6 Présentation de l'équipe -->
 
         <section id="sectionThree">
 
@@ -132,8 +135,6 @@
             <ul class="theTeam">
                 <li class="left">
                     <img id="faizPic" alt="Faiza picture" src="/Divers/Dragon rouge.jpg">
-                    <!-- div pour le texte pour optimiser l'afichage -->
-
                     <div class="text-equipe">
                         <h2>Faiza</h2>
                         <p>Gentille dracène des mers</p>
