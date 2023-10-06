@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Irish Grover', cursive;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 :root {
     --primaryBlue : #5AA9E6;
@@ -28,7 +28,7 @@ html {
         /*Header*/
 
 header {
-    margin: .5rem 0 .5rem 0;
+    margin: .5rem .5rem .5rem 0;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -123,6 +123,11 @@ main {
     justify-content: space-around;
     gap: 3rem;
 }
+.containerBlocUn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 .dragonGame {
     background-image: url(/Divers/montagnes.png);
@@ -168,7 +173,7 @@ main {
 }
 
 .playButton {
-    margin: 1rem 5rem 0 5rem;
+    margin: 1rem 3rem 0 rem;
     border-radius: var(--myBorderRadius);
     border: none;
     background-color: var(--whiteColor);
@@ -180,11 +185,14 @@ main {
     justify-content: center;
     align-items: center;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem,;
-    border: none;
+    padding-top: 0.5rem;
+    border: var(--myBorder);
+    border-width: 2px;
     background-color: var(--pinkColor);
     border-radius: var(--myBorderRadius);
     font-size: x-large;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 #dName {
@@ -208,6 +216,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 3rem;
 }
 
 #food-Button {
@@ -236,6 +245,7 @@ main {
 
 .game-over{
     display: none;
+    align-items: center;
 }
 
         /*Section Instruction*/
