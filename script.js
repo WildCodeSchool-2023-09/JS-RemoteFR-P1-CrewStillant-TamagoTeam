@@ -15,10 +15,6 @@ let health;
 const initiateGame = document.querySelector(".defaultBox");
 initiateGame.addEventListener("click", () => document.querySelector(".secondBox").style.display = "contents");
 
-/*puis message validation lancement jeu*/
-
-
-
 /*le nom saisi remplace le nom par default*/
 
 const playBtn = document.querySelector(".playButton");
@@ -37,7 +33,8 @@ playBtn.addEventListener("click", () => {
     document.querySelector(".three-buttons").style.display = "contents"}, 3000);
     });
 
-/* Quand le nom du dragon est validé */
+/* Quand le nom du dragon est validé, le jeu se lance vraiment */
+
 playBtn.addEventListener("click", function() {
     gameStart = "true";
     if (gameStart === "true") {
@@ -72,7 +69,7 @@ healthBtn.addEventListener("mouseover", () => {
     setTimeout(() => healthBtn.style.boxShadow = "none", 250);
 });
 
-/* Actions suite à appui d'un bouton */
+/* Actions suite à appui sur un bouton */
 
 foodBtn.addEventListener("click", function(){
     food+=10;
@@ -108,6 +105,7 @@ function decrease(){
 }
 
 /* Limitation à 100 des barres de besoins*/
+
 setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
