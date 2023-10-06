@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Irish Grover', cursive;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 :root {
     --primaryBlue : #5AA9E6;
@@ -166,7 +166,7 @@ main {
 }
 
 .playButton {
-    margin: 1rem 5rem 0 5rem;
+    margin: 1rem 3rem 0 rem;
     border-radius: var(--myBorderRadius);
     border: none;
     background-color: var(--whiteColor);

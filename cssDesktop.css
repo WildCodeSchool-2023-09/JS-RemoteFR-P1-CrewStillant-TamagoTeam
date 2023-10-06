@@ -1,0 +1,101 @@
+
+
+    /* font a intégrer au code */
+
+@media screen and (min-width: 980px){
+    #pet-name {
+      display: flex;
+      justify-content: center;
+      width: 52.54088rem;
+      height: 4rem;
+      padding-left: 5rem;
+      font-size: 3rem;
+      background-color: var(--secondaryBlue);
+      margin: 0 0 0 0;
+      border: solid black;
+      border-width: var(--myBorderWidth);
+      border-radius: var(--myBorderRadius);
+      z-index: 1;
+      font-family: var(--primaryFont), sans-serif;
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    
+    
+  
+    .nav-buttons {
+      width: 50rem;
+      justify-content: space-around;
+    }
+    /* .containerBlocUn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 70px;
+    }
+   */
+    .dragonStates {
+      align-items: center;
+    }
+  
+    .dragonGame {
+      height: 500px;
+      width: 500px;
+    }
+    /*   #container {
+      justify-items: auto;
+      margin-top: 70px;
+    } */
+  
+    #firstsection {
+      float: left;
+      width: 25%;
+      margin-left: 15%;
+      margin-right: 2rem;
+    }
+  
+    #sectionTwo {
+      width: 25%;
+      float: right;
+      margin-right: 15%;
+    }
+  
+    .interaction-button {
+      display: inline;
+      justify-content: space-around;
+      height: 50px;
+    }
+  
+    .nameTheDragon {
+      width: 21.25rem;
+      height: 5rem;
+    }
+  
+    #sectionThree {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-items: center;
+      width: 50%;
+      margin: auto;
+    }
+  
+    #team {
+      display: flex;
+    }
+    footer {
+      background-color: var(--pinkColor);
+      border: var(--myBorder);
+      border-radius: var(--myBorderRadius);
+      border-width: var(--myBorderWidth);
+      margin-top: 2rem;
+      margin-bottom: 0px;
+      height: 2rem;
+    }
+}
+
