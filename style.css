@@ -166,11 +166,23 @@ main {
 }
 
 .playButton {
-    margin: 0 5rem 0 7rem;
+    margin: 1rem 5rem 0 5rem;
     border-radius: var(--myBorderRadius);
     border: none;
     background-color: var(--whiteColor);
+    font-size: large;
 
+}
+#reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem,;
+    border: none;
+    background-color: var(--pinkColor);
+    border-radius: var(--myBorderRadius);
+    font-size: x-large;
 }
 
 #dName {
