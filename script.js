@@ -112,23 +112,17 @@ setInterval(inspection, 500)
 function inspection(){
     if (food > 100){
         food = 100;
-        health --;
         console.log("Food limit bypassed: restored to 100");
-        document.getElementsByClassName("alert")[0].innerHTML = "I've ate too much.";
     }
 
     if (water > 100){
         water = 100;
-        health --;
         console.log("Water limit bypassed: restored to 100");
-        document.getElementsByClassName("alert")[0].innerHTML = "I've drank too much.";
     }
 
     if (health > 100){
         health = 100;
-        health --;
-        console.log("Water limit bypassed: restored to 100");
-        document.getElementsByClassName("alert")[0].innerHTML = "I dont need meds.";
+        console.log("Health limit bypassed: restored to 100");
     }
 }
 
@@ -136,29 +130,49 @@ function inspection(){
 
 statusInterval = setInterval(dragonStatus, 500)
 function dragonStatus(){
-    if (food > 50 && water > 50 && health > 50) {
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Normal 1.png"
-        document.getElementsByClassName("alert")[0].innerHTML = "I'm Okay.";
+    if (food > 75 && water > 75 && health > 75) {
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Normal.gif"
+        document.getElementsByClassName("alert")[0].innerHTML = "Je suis en pleine forme!";
+        console.log("food > 75 && water > 75 && health > 75")
+
+    } else if (food > 50 && water > 50 && health > 50) {
+        document.getElementsByClassName("alert")[0].innerHTML = "Je vais bien!";
+        console.log("food > 50 && water > 50 && health > 50")
 
     } else if (health < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sick 1.png"
-        document.getElementsByClassName("alert")[0].innerHTML = "I'm Sick.";
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sick.gif"
+        document.getElementsByClassName("alert")[0].innerHTML = "Je me sens pas bien du tout...";
         health--;
         health--;
+        console.log("health < 50")
+        
+    } else if (health < 75){
+        document.getElementsByClassName("alert")[0].innerHTML = "Je me sens pas très bien...";
+        console.log("health < 75")
 
     } else if (food < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad 1.png"
-        document.getElementsByClassName("alert")[0].innerHTML = "I'm hungry.";
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad.gif"
+        document.getElementsByClassName("alert")[0].innerHTML = "J'ai faim...";
         health--;
         health--;
-
+        console.log("Food < 50")
+        
+    } else if (food < 75){
+        document.getElementsByClassName("alert")[0].innerHTML = "J'ai un petit creux...";
+        console.log("Food < 75")
+        
     } else if (water < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad 1.png"
-        document.getElementsByClassName("alert")[0].innerHTML = "I'm thirsty.";
+        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad.gif"
+        document.getElementsByClassName("alert")[0].innerHTML = "J'ai vraiment soif...";
         health--;
         health--;
-    }
-}
+        console.log("Water < 50")
+    
+    } else if (water < 75){
+        document.getElementsByClassName("alert")[0].innerHTML = "J'ai un peu soif";
+        console.log("Water < 75")
+
+}}
 
 
 /* Detection Game Over */

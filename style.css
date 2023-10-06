@@ -18,6 +18,9 @@
     /* font a intégrer au code */
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .upward-margin {
     margin-top: 50px;
 }
@@ -29,6 +32,11 @@ header {
     position: fixed;
     top: 0;
     width: 95%;
+    transition: transform 0.3s;
+}
+
+header.scrolling-down {
+    transform: translateY(-100%);
 }
 
 body{
@@ -158,9 +166,10 @@ main {
 }
 
 .playButton {
-    margin: 0 7rem 0 7rem;
+    margin: 0 5rem 0 7rem;
     border-radius: var(--myBorderRadius);
     border: none;
+    background-color: var(--whiteColor);
 
 }
 
@@ -397,6 +406,3 @@ footer{
     margin-top: 1rem;
 }
 
-#triche {
-
-}
